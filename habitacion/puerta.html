@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+</head>
+<body>
+    <header>
+        <h1>El despertar - Escape Room</h1>
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href="../index.html">Inicio</a></li>
+            <li>Habitación</li>
+            <li>Puerta</li>
+        </ol>
+    </nav>
+
+    <main>
+        <article>
+            <h2>La puerta de salida</h2>
+            
+            <p>
+                Te acercas a la puerta de metal. Es pesada y fría al tacto.
+                En el centro hay un panel electrónico con números del 0 al 9. Necesitas ingresar un código de 4 dígitos para abrirla.
+                ¿Tienes todas las pistas necesarias para descubrir el código?
+            </p>
+            
+            <p>Pistas encontradas:</p>
+            <progress value="0" max="4">0 de 4 pistas</progress>
+            <p>0 de 4 pistas encontradas</p>
+            
+            <details>
+                <summary>¿Qué sabes del código?</summary>
+                <ul>
+                    <li>Primera posición: 8 (del escritorio)</li>
+                    <li>Segunda posición: 3 (del escritorio)</li>
+                    <li>Tercera posición: ? (necesitas el espejo)</li>
+                    <li>Cuarta posición: 7 (del escritorio)</li>
+                </ul>
+            </details>
+
+        <dialog open>
+    <h3>Panel de Código</h3>
+    <p>
+        <label for="codigo">Ingresa el código de 4 dígitos:</label>
+        <input 
+            type="number" 
+            id="codigo" 
+            name="codigo" 
+            min="0" 
+            max="9999" 
+            placeholder="####"
+        >
+    </p>
+    
+    <p><strong>Si tu código es 8317:</strong></p>
+    <p>
+        <a href="../finales/codigo-correcto.html">
+            <button type="button">Confirmar código 8317</button>
+        </a>
+    </p>
+    
+    <p><strong>Si es otro código:</strong></p>
+    <p>
+        <a href="../finales/game-over.html">
+            <button type="button">Intentar otro código</button>
+        </a>
+    </p>
+</dialog>
+
+            <nav>
+                <h3>¿Qué procede?</h3>
+                <ul> 
+                    <li><a href="../index.html">Volver a la habitación</a></li>
+                    <li><a href="../pistas/notebook.html">Revisar notas</a></li>
+                </ul>
+            </nav>
+        </article>
+    </main>
+
+    <footer>
+        La libertad está a solo 4 dígitos de distancia
+    </footer>
+</body>
+</html>
